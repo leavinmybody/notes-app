@@ -19,7 +19,7 @@ const AddNote = ({ handleAddNote }) => {
   };
 
   return (
-    <div className="flex flex-col justify-between rounded-md p-4 min-h-170 bg-darkMain text-darkText">
+    <div className="flex flex-col justify-between p-4 rounded-md min-h-170 bg-darkMain text-darkText">
       <textarea
         placeholder="Type to add a note..."
         cols="10"
@@ -28,10 +28,10 @@ const AddNote = ({ handleAddNote }) => {
         value={noteText}
         onChange={handleChange}
       ></textarea>
-      <div className="flex align-middle justify-between">
-        <small>{characterLimit - noteText.length} Remaining</small>
+      <div className="flex justify-between align-middle">
+        <small>( {characterLimit - noteText.length} )</small>
         <button
-          className="bg-darkSecondary rounded-md border-none pt-1 pr-2 pb-1 pl-2 hover:scale-110 transition duration-150 ease-in-out active:scale-90 active:bg-tertiaryLight"
+          className="pt-1 pb-1 pl-2 pr-2 transition duration-150 ease-in-out border-none rounded-md bg-darkSecondary hover:scale-110 active:scale-90 active:bg-tertiaryLight"
           onClick={handleSaveClick}
         >
           Save
