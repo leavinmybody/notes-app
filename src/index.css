@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Dangrek&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    background-color: #fff3ec;
+    font-family: "Dangrek", cursive;
+  }
+}
